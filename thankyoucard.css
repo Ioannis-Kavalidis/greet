@@ -1,0 +1,101 @@
+
+body {
+    padding:0;
+    margin:0;
+    background-image: url(Notebook.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    font-family: Roboto, sans-serif;
+    margin: auto;
+}
+
+.danke {
+    color: #EB944D;
+    font-size: 30px;
+    background: rgba(200,200,200,0.5 );
+    border-radius: 45px;
+    box-shadow: 0 0 10px #40190a;
+    width: 450px;
+    position: relative;
+    left: 25vh;
+    top: 10%;
+    
+    animation-name: inmove;
+    animation-duration: 5s;
+    overflow: hidden;
+    transition: all 5s;
+}
+
+@keyframes inmove {
+    from{top: -100%;}
+    to {top: 10%;}
+}
+
+.danke img {
+    border-radius: 20%; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 160px;
+    width: 150px;
+    height: 150px;
+}
+
+.danke h2 {
+    color: #555D85;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #A8ADBD;
+    text-align: center;
+}
+
+.note {
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #40190A;
+    top: 350px;
+}
+
+.madeby h2{
+    font-size: 20px;
+    color: #EEDCB3;
+    position: absolute;
+    display: inline-block;
+    bottom: 5px;
+    padding:0 10px;
+    width: 100%;
+    text-shadow: 0 0 10px #000;
+    text-align: left;
+    animation-name: loop;
+    animation-duration: 8s;
+}
+
+@keyframes loop {
+    from {left: -90%;};
+    to {left: 25%;}
+}
+@media all and (max-width: 640px) {
+    .danke {
+        position: static;
+    }
+    .madeby h2 {
+        position: static;
+    }
+}
+
+
+
+
+
